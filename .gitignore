@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+**/dist
+**.tgz
+docs/api
+temp
+etc
+uploads
+tsdoc-metadata.json
+.vscode
