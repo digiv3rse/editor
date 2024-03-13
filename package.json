@@ -1,11 +1,5 @@
 {
-  "name": "@mdxeditor/editor",
-  "author": "Petyo Ivanov",
-  "homepage": "https://mdxeditor.dev/",
-  "bugs": {
-    "url": "https://github.com/mdx-editor/editor/issues",
-    "email": "petyo@virtuoso.dev"
-  },
+  "name": "editor",
   "private": false,
   "sideEffects": [
     "*.css"
@@ -14,15 +8,15 @@
   "version": "0.0.0-development",
   "description": "React component for rich text markdown editing",
   "scripts": {
-    "build": "vite build",
+    "build": "vite build && npm build:docs:api",
     "build:docs:api": "typedoc",
-    "start": "LADLE=true ladle dev",
+    "start": "LADLE=true ladle dev && npm run image:backend",
     "dev": "LADLE=true ladle dev",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --ext .ts,.tsx",
     "test": "vitest",
     "semantic-release": "semantic-release",
-    "image-upload-backend": "node ./src/stories/file-backend.js"
+    "image:backend": "node ./src/stories/file-backend.js"
   },
   "files": [
     "dist"
