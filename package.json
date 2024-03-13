@@ -8,7 +8,7 @@
   "version": "0.0.0-development",
   "description": "React component for rich text markdown editing",
   "scripts": {
-    "build": "vite build && npm build:docs:api",
+    "build": "vite build && npm run build:docs:api",
     "build:docs:api": "typedoc",
     "start": "LADLE=true ladle dev && npm run image:backend",
     "dev": "LADLE=true ladle dev",
